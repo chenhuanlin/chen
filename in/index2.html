@@ -30,6 +30,11 @@
         animation-timing-function: linear;
     }
     
+    #wrap:hover {
+        animation-play-state: paused;
+        -webkit-animation-play-state: paused;
+    }
+    
     @keyframes myMove {
         0% {
             transform: rotateY(0deg) rotateX(-8deg);
@@ -93,7 +98,7 @@
 </head>
 
 <body>
-    <audio src="a.mp3" autoplay="ture"></audio>
+    <audio src="a.mp3" autoplay="true"></audio>
     <div id="wrap">
         <div class="m a1">
             <img src="img/1.jpeg" />
